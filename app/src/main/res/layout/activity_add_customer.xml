@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AddCustomerActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <EditText
+                android:id="@+id/Customer_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_default_bg"
+                android:drawableLeft="@drawable/user"
+                android:hint="Customer&apos;s Name"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:textColorHint="#bbbbbb" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/Customer_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_top_bg"
+                android:drawableLeft="@drawable/email"
+                android:hint="Customer&apos;s  Email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColorHint="#bbbbbb" />
+
+            <EditText
+                android:id="@+id/Customer_Mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_top_bg"
+                android:drawableLeft="@drawable/contact_number"
+                android:hint="Customer&apos;s   Contact Number"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:textColorHint="#bbbbbb" />
+
+            <EditText
+                android:id="@+id/Customer_Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_top_bg"
+                android:drawableLeft="@drawable/home"
+                android:ems="10"
+                android:hint="Customer&apos;s   Contact Number"
+                android:imeOptions="actionNext"
+                android:inputType="textPostalAddress"
+                android:padding="10dp"
+                android:singleLine="false"
+                android:textColorHint="#bbbbbb" />
+
+            <Button
+                android:id="@+id/ButtonController_AddCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_default_bg"
+                android:text="Add Customer" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

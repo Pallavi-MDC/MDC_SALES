@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1.0" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_Tile1"
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.5"
+            android:background="#cccccc"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextViewController_Tile_One_Target"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/target"
+                android:textColor="@color/list_item_title"
+                android:textSize="@dimen/home_page_title" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/theme_color"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TextViewController_Tile_One_TargetText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/dummy_text"
+                android:textColor="@color/list_item_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_Tile3"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.3"
+            android:background="#cccccc"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextViewController_LastPunchOut_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/last_punch_out"
+                android:textColor="@color/list_item_title"
+                android:textSize="@dimen/home_page_title" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/theme_color"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TextViewController_LastPunchOut_Text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="05.00 PM \n6th October 2014"
+                android:textColor="@color/list_item_title" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_Tile2"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.3"
+            android:background="#cccccc"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextViewController_PunchIn_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/last_punch_in"
+                android:textColor="@color/list_item_title"
+                android:textSize="@dimen/home_page_title" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/theme_color"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TextViewController_PunchIn_Text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="10.00 AM \n6th October 2014"
+                android:textColor="@color/list_item_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_Tile4"
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.5"
+            android:background="#cccccc"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextViewController_TotalSale_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/total_sale"
+                android:textColor="@color/list_item_title"
+                android:textSize="@dimen/home_page_title" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/theme_color"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TextViewController_TotalSale_Text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/dummy_text"
+                android:textColor="@color/list_item_title" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

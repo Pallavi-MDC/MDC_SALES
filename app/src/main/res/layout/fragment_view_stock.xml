@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/drop_sawdow_bk" >
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout03"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff" >
+
+                    <TextView
+                        android:id="@+id/TextView03"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Select Model Type"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <Spinner
+                        android:id="@+id/SpinnerControllerType"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/TextView03"
+                        android:layout_marginTop="10dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/drop_sawdow_bk" >
+
+                <RelativeLayout
+                    android:id="@+id/realtivelayoutModelWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff" >
+
+                    <TextView
+                        android:id="@+id/TextViewController_CustomMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Select Model"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <Spinner
+                        android:id="@+id/spinnerControllerModel"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/TextViewController_CustomMessage"
+                        android:layout_marginTop="10dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/drop_sawdow_bk" >
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff" >
+
+                    <TextView
+                        android:id="@+id/TextView01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Select Color"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <Spinner
+                        android:id="@+id/SpinnerControllerColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/TextView01"
+                        android:layout_marginTop="10dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/drop_sawdow_bk" >
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff" >
+
+                    <TextView
+                        android:id="@+id/TextView02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Enter Quantity"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <EditText
+                        android:id="@+id/editTextControllerQuantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/TextView02"
+                        android:ems="10"
+                        android:hint="Model Quantity"
+                        android:inputType="number" >
+                    </EditText>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="2dp" >
+
+                <Button
+                    android:id="@+id/buttonControllerAddToStock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Add To Stock" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

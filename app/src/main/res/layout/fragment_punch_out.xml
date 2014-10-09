@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:weightSum="2" >
+
+    <LinearLayout
+        android:id="@+id/CameraWrapperLineraLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="4" >
+
+        <RelativeLayout
+            android:id="@+id/CameraImageRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/imageViewCamaraOutputForPunchOut"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="Camara Image"
+                android:src="@drawable/ic_launcher" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/CameraCaptureButtonRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3" >
+
+            <Button
+                android:id="@+id/buttonControllerCaptureForPunchOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="Capture Image" />
+
+            <Button
+                android:id="@+id/buttonControllerUploadForPunchOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Upload Image" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/GPSWrapperLineraLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextViewController_CustomMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Current Address -" />
+
+            <TextView
+                android:id="@+id/textViewCurrentAddressForPunchOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/TextViewController_CustomMessage"
+                android:lines="4"
+                android:maxLines="4"
+                android:text="Please click on Get Current Address"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/buttonControllerGetAddressForPunchOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textViewCurrentAddressForPunchOut"
+                android:layout_marginRight="17dp"
+                android:layout_marginTop="14dp"
+                android:text="Get Current Address" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <Button
+                android:id="@+id/buttonControllerMarkAttendusForPunchOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="Mark Attendance" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

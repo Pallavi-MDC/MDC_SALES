@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="80dp"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:padding="20dp" 
+    android:background="#ffffff">
+
+    <com.todddavies.components.progressbar.ProgressWheel
+        android:id="@+id/CustomProgressBar"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        ProgressWheel:barColor="#4e3115"
+        ProgressWheel:barLength="30dp"
+        ProgressWheel:barWidth="4dp"
+        ProgressWheel:delayMillis="75"
+        ProgressWheel:rimColor="#e87352"
+        ProgressWheel:rimWidth="1dp"
+        ProgressWheel:spinSpeed="10dp" />
+
+    <TextView
+        android:id="@+id/TextViewController_CustomMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textColor="#4e3115"
+        android:textSize="16sp" />
+
+</LinearLayout>
